@@ -3,9 +3,6 @@ if [ -n "$(gnome-extensions list | grep Vitals@CoreCoding.com)" ]; then
   gnome-extensions uninstall Vitals@CoreCoding.com
 fi
 
-# Install Tophat libraries
-sudo apt install -y gir1.2-gtop-2.0 gir1.2-clutter-1.0
-
 # Install TopHat
 gext install tophat@fflewddur.github.io
 
